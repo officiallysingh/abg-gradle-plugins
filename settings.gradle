@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+
+rootProject.name = 'gradle-conventions-plugins-template'
+
+//includeBuild('build-conventions/version-conventions')
+//includeBuild('build-conventions/java-conventions')
+//includeBuild('build-conventions/groovy-conventions')
+//includeBuild('build-conventions/kotlin-conventions')
+//includeBuild('build-conventions/scala-conventions')
+//includeBuild('build-conventions/test-conventions')
+//includeBuild('build-conventions/common-conventions')
+//includeBuild('build-conventions/bytebuddy-conventions')
+//includeBuild('build-conventions/logging-conventions')
+
+includeBuild('build-conventions')
+
+//includeBuild('build-plugins/version-plugins')
+//includeBuild('build-plugins/java-plugins')
+//includeBuild('build-plugins/groovy-plugins')
+//includeBuild('build-plugins/kotlin-plugins')
+//includeBuild('build-plugins/scala-plugins')
+//includeBuild('build-plugins/test-plugins')
+//includeBuild('build-plugins/common-plugins')
+//includeBuild('build-plugins/bytebuddy-plugins')
+//includeBuild('build-plugins/logging-plugins')
+
+includeBuild('build-plugins')
+
+include('sample-project')

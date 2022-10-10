@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+
+plugins {
+    id 'base'
+    id 'java'
+    id 'groovy'
+
+    id 'java-gradle-plugin'
+    id 'groovy-gradle-plugin'
+}
+
+description 'Framework Template: Build Plugins'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    google()
+    gradlePluginPortal()
+}
+
+dependencies {
+    implementation localGroovy()
+    implementation gradleApi()
+
+    implimentation project('../version-conventions')
+
+    testImplementation gradleTestKit()
+}

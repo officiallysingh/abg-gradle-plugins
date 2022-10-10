@@ -1,0 +1,14 @@
+plugins {
+	//id 'template-plugin.build-conventions'
+}
+
+description 'Framework Template'
+
+dependencies {
+	implimentation project("sample-project")
+}
+
+wrapper {
+	gradleVersion = '6.7'
+	distributionType = Wrapper.DistributionType.ALL
+}
